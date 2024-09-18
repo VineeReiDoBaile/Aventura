@@ -1,33 +1,52 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #020613;
+    --fonte-principal: 'New Amsterdam';
+    --botao-azul-efeito: #3c92fa;
+}
+
 body {
-    background-color: #1D4221;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-    display: flex;
-    justify-content: center;
+  color: var(--branco-principal);
+  background: var(--cor-de-fundo);
+}
+
+header {
+    border-bottom: solid 2px var(--cinza-secundario);
+    padding: 10px;
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+    margin: -1.75em 0 0 1.4em;
+
+}
+
+.logo1 {
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 5% 5%;
+    border-bottom: solid 2px var(--cinza-secundario);
+    padding: 1px;
+}
+
+.principal {
+    margin: -1em 0 0 0;
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
     align-items: center;
-    height: 700px;
-    margin: 0;
-}
-
-button {
-    background-color: #64A712;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-}
-
-.passo {
-    display: none;
-}
-
-.passo.ativo {
-    display:block;
-}
-
-main {
     text-align: center;
-    max-width: 90%;
 }
 
-img {
-    max-width: 90%;
+.container {
+    height: 100vh;
+    font-family: "Caveat", cursive;
+    color: var(--cinza-secundario);
+    font-size: 20px;
+    margin: 0 em 2em 0;
+    
+}
+
+.container__imagem {
+    margin: 1em 25em 2em 0;
 }
